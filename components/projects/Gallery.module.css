@@ -1,0 +1,25 @@
+.gallery-container {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem; /* Adjust this spacing */
+  }
+  
+  .gallery-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap:10px;
+  }
+  
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the width of each photo */
+    height: 200px; /* Adjust the height of each photo */
+    object-fit: cover;
+    scroll-snap-align: start;
+  }
